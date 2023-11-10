@@ -4,14 +4,14 @@ type CardProps = {
 
 const Card: React.FunctionComponent<CardProps> = ({ info }) => {
   return (
-    <article>
-      <picture>
+    <article className="relative bg-neutral-4 flex flex-col gap-4 items-center text-center p-8">
+      <picture className="h-16 w-16">
         <img
-          src={`../assets/images/avatar-${info.name.toLocaleLowerCase()}.png`}
+          src={`src/assets/images/avatar-${info.name.toLocaleLowerCase()}.png`}
           alt={`avatar of ${info.name}`}
         />
       </picture>
-      <h4>
+      <h4 className="text-primary-2 text-md font-medium">
         {info.name} {info.surname}
       </h4>
       <p>{info.testimonial}</p>

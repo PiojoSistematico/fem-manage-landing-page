@@ -4,15 +4,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        "bright-red": "#f25f3a",
-        "dark-blue": "#242d52",
-        "dark-grayish-blue": "#9095a7",
-        "very-dark-blue": "#1d1e25",
-        "Very Pale Red": "#ffefeb",
-        "Vary Light Gray": "#fafafa",
+        "primary-1": "#f25f3a",
+        "primary-2": "#242d52",
+        "neutral-1": "#9095a7",
+        "neutral-2": "#1d1e25",
+        "neutral-3": "#ffefeb",
+        "neutral-4": "#fafafa",
+        "neutral-5": "#ffffff",
       },
       fontFamily: {
-        vietnam: ["Be Vietnam Pro", "sans-serif"],
+        BeVietnamPro: ["BeVietnamPro", "sans-serif"],
       },
     },
   },

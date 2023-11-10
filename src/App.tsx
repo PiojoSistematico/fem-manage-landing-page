@@ -11,33 +11,44 @@ function App() {
   return (
     <>
       <Header></Header>
-      <main>
-        <section title="hero-section">
-          <picture>
+      <main className="text-base font-BeVietnamPro bg-neutral-5 text-neutral-1 font-normal">
+        <section title="hero-section" className="flex flex-col gap-4 p-8">
+          <picture className="object-contain w-full">
             <img src={imgIntro} alt="Illustration Intro" />
           </picture>
-          <div>
-            <h1>Bring everyone together to build better products.</h1>
+          <div className="flex flex-col items-center gap-4 text-center">
+            <h1 className="text-4xl text-primary-2 font-bold">
+              Bring everyone together to build better products.
+            </h1>
             <p>
               Manage makes it simple for software teams to plan day-to-day tasks
               while keeping the larger team goals in view.
             </p>
-            <Button>Get Started</Button>
+            <Button className="bg-primary-1 text-neutral-4 rounded-3xl px-8 py-2">
+              Get Started
+            </Button>
           </div>
         </section>
-        <section title="description-section">
-          <div>
-            <h2>What’s different about Manage?</h2>
+        <section
+          title="description-section"
+          className="flex flex-col gap-4 items-center py-8"
+        >
+          <div className="flex flex-col items-center gap-4 text-center p-8">
+            <h2 className="text-2xl text-primary-2 font-bold">
+              What’s different about Manage?
+            </h2>
             <p>
               Manage provides all the functionality your team needs, without the
               complexity. Our software is tailor-made for modern digital product
               teams.
             </p>
           </div>
-          <div>
-            <div>
-              <div>
-                <span>01</span>
+          <div className="flex flex-col gap-8 pl-4">
+            <div className="flex flex-col gap-2">
+              <div className="bg-neutral-3 text-primary-2 font-medium flex flex-row items-center gap-4 rounded-l-2xl">
+                <span className="bg-primary-1 text-neutral-4 rounded-3xl px-6 py-2">
+                  01
+                </span>
                 <span>Track company-wide progress</span>
               </div>
               <p>
@@ -47,9 +58,11 @@ function App() {
                 again.
               </p>
             </div>
-            <div>
-              <div>
-                <span>02</span>
+            <div className="flex flex-col gap-2">
+              <div className="bg-neutral-3 text-primary-2 font-medium flex flex-row items-center gap-4 rounded-l-2xl">
+                <span className="bg-primary-1 text-neutral-4 rounded-3xl px-6 py-2">
+                  02
+                </span>
                 <span>Advanced built-in reports</span>
               </div>
               <p>
@@ -58,9 +71,11 @@ function App() {
                 the reports you need to keep key stakeholders informed.
               </p>
             </div>
-            <div>
-              <div>
-                <span>03</span>
+            <div className="flex flex-col gap-2">
+              <div className="bg-neutral-3 text-primary-2 font-medium flex flex-row items-center gap-4 rounded-l-2xl">
+                <span className="bg-primary-1 text-neutral-4 rounded-3xl px-6 py-2">
+                  03
+                </span>
                 <span>Everything you need in one place</span>
               </div>
               <p>
@@ -72,9 +87,16 @@ function App() {
           </div>
         </section>
         <Carrousel></Carrousel>
-        <section title="cta-section">
-          <p>Simplify how your team works today.</p>
-          <Button>Get Started</Button>
+        <section
+          title="cta-section"
+          className="bg-primary-1 flex flex-col gap-4 px-8 py-16 items-center text-neutral-4"
+        >
+          <p className="text-3xl font-medium text-center">
+            Simplify how your team works today.
+          </p>
+          <Button className="bg-neutral-4 text-primary-1 rounded-3xl px-8 py-2 font-medium">
+            Get Started
+          </Button>
         </section>
       </main>
       <Footer></Footer>

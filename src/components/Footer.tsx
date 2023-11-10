@@ -1,14 +1,17 @@
 import { Button, TextField } from "react-aria-components";
-import iconFacebook from "../assets/images/icon-facebook.svg";
-import iconYoutube from "../assets/images/icon-youtube.svg";
-import iconTwitter from "../assets/images/icon-twitter.svg";
-import iconPinterest from "../assets/images/icon-pinterest.svg";
-import iconInstagram from "../assets/images/icon-instagram.svg";
-import Logo from "../assets/images/logo.svg";
+
+import {
+  IconFacebook,
+  IconInstagram,
+  IconLogo,
+  IconPinterest,
+  IconTwitter,
+  IconYoutube,
+} from "./Icons";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="text-base font-BeVietnamPro bg-neutral-5 text-neutral-1 font-normal">
       <form action="">
         <TextField></TextField>
         <Button>Go</Button>
@@ -42,23 +45,23 @@ const Footer = () => {
       </nav>
       <div>
         <a href="#">
-          <img src={iconFacebook} alt="icon Facebook" />
+          <IconFacebook></IconFacebook>
         </a>
         <a href="#">
-          <img src={iconYoutube} alt="icon Youtube" />
+          <IconYoutube></IconYoutube>
         </a>
         <a href="#">
-          <img src={iconTwitter} alt="icon Twitter" />
+          <IconTwitter></IconTwitter>
         </a>
         <a href="#">
-          <img src={iconPinterest} alt="icon Pinterest" />
+          <IconPinterest></IconPinterest>
         </a>
         <a href="#">
-          <img src={iconInstagram} alt="icon Instagram" />
+          <IconInstagram></IconInstagram>
         </a>
       </div>
       <a href="#">
-        <img src={Logo} alt="manage logo" />
+        <IconLogo></IconLogo>
       </a>
       <p>Copyright 2020. All Rights Reserved</p>
     </footer>
