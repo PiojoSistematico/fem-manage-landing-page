@@ -8,61 +8,68 @@ import {
   IconTwitter,
   IconYoutube,
 } from "./Icons";
+import CustomForm from "./CustomForm";
 
 const Footer = () => {
   return (
     <footer className="bg-neutral-2 p-8 text-base font-BeVietnamPro text-neutral-3 font-normal flex flex-col items-center gap-8">
-      <form action="" className="flex flex-row items-center gap-4">
-        <input
-          type="email"
-          className="rounded-3xl text-neutral-1 px-4 py-2 text-sm"
-          placeholder="Updates in your inbox"
-        />
-        <Button className="bg-primary-1 px-6 py-2 rounded-3xl text-neutral-5">
-          Go
-        </Button>
-      </form>
+      <CustomForm></CustomForm>
       <nav className="flex flex-row items-start justify-between w-full px-12 py-4">
         <ul className="flex flex-col gap-4">
-          <li>
+          <li className="hover:text-primary-1 focus-visible:text-primary-1">
             <a href="#">Home</a>
           </li>
-          <li>
+          <li className="hover:text-primary-1 focus-visible:text-primary-1">
             <a href="#">Pricing</a>
           </li>
-          <li>
+          <li className="hover:text-primary-1 focus-visible:text-primary-1">
             <a href="#">Products</a>
           </li>
-          <li>
+          <li className="hover:text-primary-1 focus-visible:text-primary-1">
             <a href="#">About Us</a>
           </li>
         </ul>
         <ul className="flex flex-col gap-4">
-          <li>
+          <li className="hover:text-primary-1 focus-visible:text-primary-1">
             <a href="#">Careers</a>
           </li>
-          <li>
+          <li className="hover:text-primary-1 focus-visible:text-primary-1">
             <a href="#">Community</a>
           </li>
-          <li>
+          <li className="hover:text-primary-1 focus-visible:text-primary-1">
             <a href="#">Privacy Policy</a>
           </li>
         </ul>
       </nav>
       <div className="flex flex-row items-center justify-center gap-4 scale-125">
-        <a href="#">
+        <a
+          href="#"
+          className="hover:text-primary-1 focus-visible:text-primary-1"
+        >
           <IconFacebook></IconFacebook>
         </a>
-        <a href="#">
+        <a
+          href="#"
+          className="hover:text-primary-1 focus-visible:text-primary-1"
+        >
           <IconYoutube></IconYoutube>
         </a>
-        <a href="#">
+        <a
+          href="#"
+          className="hover:text-primary-1 focus-visible:text-primary-1"
+        >
           <IconTwitter></IconTwitter>
         </a>
-        <a href="#">
+        <a
+          href="#"
+          className="hover:text-primary-1 focus-visible:text-primary-1"
+        >
           <IconPinterest></IconPinterest>
         </a>
-        <a href="#">
+        <a
+          href="#"
+          className="hover:text-primary-1 focus-visible:text-primary-1"
+        >
           <IconInstagram></IconInstagram>
         </a>
       </div>

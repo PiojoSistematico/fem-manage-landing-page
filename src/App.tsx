@@ -24,7 +24,7 @@ function App() {
               Manage makes it simple for software teams to plan day-to-day tasks
               while keeping the larger team goals in view.
             </p>
-            <Button className="bg-primary-1 text-neutral-4 rounded-3xl px-8 py-2">
+            <Button className="bg-primary-1 text-neutral-4 rounded-3xl px-8 py-2 hover:opacity-70 focus-visible:opacity-70">
               Get Started
             </Button>
           </div>
@@ -94,7 +94,7 @@ function App() {
           <p className="text-3xl font-medium text-center">
             Simplify how your team works today.
           </p>
-          <Button className="bg-neutral-4 text-primary-1 rounded-3xl px-8 py-2 font-medium">
+          <Button className="bg-neutral-4 text-primary-1 rounded-3xl px-8 py-2 font-medium hover:opacity-90 focus-visible:opacity-90">
             Get Started
           </Button>
         </section>
