@@ -29,9 +29,9 @@ const CustomForm = () => {
     <form
       onSubmit={handleSubmit(onSubmit)}
       action=""
-      className="flex flex-row items-center gap-4"
+      className="max-w-9/12 flex flex-row items-center justify-center gap-2 md:order-3 md:pr-12"
     >
-      <div className="w-full relative">
+      <div className="relative">
         <input
           {...register("email")}
           type="email"
