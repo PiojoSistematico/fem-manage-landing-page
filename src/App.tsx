@@ -2,7 +2,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import imgIntro from "./assets/images/illustration-intro.svg";
 import { Button } from "react-aria-components";
-import Carrousel from "./components/Carrousel";
+import CustomCarrousel from "./components/CustomCarrousel";
 import Footer from "./components/Footer";
 
 function App() {
@@ -89,7 +89,7 @@ function App() {
             </div>
           </div>
         </section>
-        <Carrousel></Carrousel>
+        <CustomCarrousel></CustomCarrousel>
         <section
           title="cta-section"
           className="bg-primary-1 flex flex-col gap-4 px-8 py-16 items-center text-neutral-4 md:flex-row md:items-center md:justify-between"
