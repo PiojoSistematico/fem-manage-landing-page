@@ -1,10 +1,14 @@
 import { Button } from "react-aria-components";
 import data from "../assets/data/cards.json";
 import Card from "./Card";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { Carousel, CarouselContent, CarouselItem } from "./Carrousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const CustomCarrousel: React.FunctionComponent = () => {
   const [index, setIndex] = useState(0);
+
+  const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: true }));
 
   return (
     <section
@@ -12,13 +16,10 @@ const CustomCarrousel: React.FunctionComponent = () => {
       className="flex flex-col gap-16 items-center p-8"
     >
       <h2 className="text-2xl text-primary-2 font-bold">What they’ve said</h2>
-      <div>
+      <div className="md:hidden">
         <Card info={data[index]}></Card>
-        {/* {data.map((elem, index) => (
-          <Card key={index} info={elem}></Card>
-        ))} */}
       </div>
-      <div className="flex flex-row items-center justify-center gap-2">
+      <div className="flex flex-row items-center justify-center gap-2 md:hidden">
         <Button
           onPress={() => setIndex(0)}
           className={`${
@@ -45,7 +46,26 @@ const CustomCarrousel: React.FunctionComponent = () => {
         ></Button>
       </div>
 
-      <Button className="bg-primary-1 text-neutral-4 rounded-3xl px-8 py-2">
+      <Carousel
+        opts={{
+          align: "start",
+          loop: true,
+          active: true,
+          direction: "ltr",
+        }}
+        plugins={[plugin.current]}
+        className="hidden md:block"
+      >
+        <CarouselContent className="h-[500px] lg:h-[400px] items-center">
+          {data.map((elem) => (
+            <CarouselItem className="basis-1/3">
+              <Card info={elem}></Card>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
+
+      <Button className="bg-primary-1 text-neutral-4 rounded-3xl px-8 py-2 hover:opacity-80 focus-visible:opacity-80">
         Get Started
       </Button>
     </section>
