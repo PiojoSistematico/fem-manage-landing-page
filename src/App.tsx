@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Header from "./components/Header";
 import imgIntro from "./assets/images/illustration-intro.svg";
 import { Button } from "react-aria-components";
@@ -6,20 +5,18 @@ import CustomCarrousel from "./components/CustomCarrousel";
 import Footer from "./components/Footer";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Header></Header>
       <main className="text-base font-BeVietnamPro bg-neutral-5 text-neutral-1 font-normal">
         <section
           title="hero-section"
-          className="flex flex-col gap-4 p-8 md:grid md:grid-cols-2"
+          className="flex flex-col gap-4 md:px-32 py-8 px-8 md:grid md:grid-cols-2"
         >
           <picture className="object-contain w-full md:order-2">
             <img src={imgIntro} alt="Illustration Intro" />
           </picture>
-          <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left md:justify-center">
+          <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left md:justify-center md:w-3/5">
             <h1 className="text-4xl text-primary-2 font-bold">
               Bring everyone together to build better products.
             </h1>
@@ -34,9 +31,9 @@ function App() {
         </section>
         <section
           title="description-section"
-          className="flex flex-col gap-4 py-8 md:grid md:grid-cols-2"
+          className="flex flex-col gap-4  md:px-32 px-8 py-8 md:grid md:grid-cols-2"
         >
-          <div className="flex flex-col items-center gap-4 text-center p-8 md:items-start md:text-left md:justify-start md:p-0 md:pl-8">
+          <div className="flex flex-col items-center gap-4 text-center py-8 md:items-start md:text-left md:justify-start md:p-0 md:w-3/5">
             <h2 className="text-2xl text-primary-2 font-bold">
               What’s different about Manage?
             </h2>
@@ -92,7 +89,7 @@ function App() {
         <CustomCarrousel></CustomCarrousel>
         <section
           title="cta-section"
-          className="bg-primary-1 flex flex-col gap-4 px-8 py-16 items-center text-neutral-4 md:flex-row md:items-center md:justify-between"
+          className="bg-primary-1 flex flex-col gap-4 md:px-32 px-16 py-16 items-center text-neutral-4 md:flex-row md:items-center md:justify-between"
         >
           <p className="text-3xl font-medium text-center">
             Simplify how your team works today.

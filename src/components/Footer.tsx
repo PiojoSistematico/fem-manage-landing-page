@@ -10,7 +10,7 @@ import CustomForm from "./CustomForm";
 
 const Footer = () => {
   return (
-    <footer className="overflow-hidden relative md:grid md:grid-cols-3 md:items-start md:pt-12 bg-neutral-2 p-8 text-base font-BeVietnamPro text-neutral-3 font-normal flex flex-col items-center gap-8">
+    <footer className="md:px-32 overflow-hidden relative md:grid md:grid-cols-3 md:items-start md:pt-12 bg-neutral-2 p-8 text-base font-BeVietnamPro text-neutral-3 font-normal flex flex-col items-center gap-8">
       <CustomForm></CustomForm>
       <nav className="flex flex-row items-start justify-between w-full px-12 md:px-4 py-4 md:py-0 gap-4 md:order-2">
         <ul className="flex flex-col gap-4">
@@ -39,8 +39,8 @@ const Footer = () => {
           </li>
         </ul>
       </nav>
-      <div className="flex flex-col md:items-start gap-12 md:flex-col-reverse md:pl-12 md:order-1">
-        <div className="flex flex-row items-center justify-center gap-4 scale-125 md:justify-start">
+      <div className="flex flex-col md:items-start gap-12 md:flex-col-reverse md:order-1">
+        <div className="flex flex-row items-center justify-center gap-4 scale-125 md:justify-start md:pl-4">
           <a
             href="#"
             className="hover:text-primary-1 focus-visible:text-primary-1"
@@ -77,7 +77,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <p className="text-neutral-1 md:absolute md:right-4 md:bottom-4">
+      <p className="text-neutral-1 md:absolute md:right-32 md:bottom-4">
         Copyright 2020. All Rights Reserved
       </p>
     </footer>

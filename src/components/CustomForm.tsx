@@ -22,6 +22,7 @@ const CustomForm = () => {
 
   async function onSubmit(data: TypeSchema) {
     await new Promise((resolve) => setTimeout(resolve, 1000));
+    console.log(data);
     reset();
   }
 
@@ -29,12 +30,11 @@ const CustomForm = () => {
     <form
       onSubmit={handleSubmit(onSubmit)}
       action=""
-      className="max-w-9/12 flex flex-row items-center justify-center gap-2 md:order-3 md:pr-12"
+      className="max-w-9/12 flex flex-row items-center justify-center gap-2 md:order-3 md:justify-end"
     >
       <div className="relative">
         <input
           {...register("email")}
-          type="email"
           className={`rounded-3xl px-4 py-2 text-sm outline-none border-2 border-solid border-neutral-5 ${errors.email ? "text-red-500 border-red-500" : " text-neutral-1"}`}
           placeholder="Updates in your inbox"
           required

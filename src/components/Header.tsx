@@ -1,9 +1,9 @@
 import CustomModal from "./CustomModal";
-import { IconBgDesktop, IconBgMobile, IconLogo } from "./Icons";
+import { IconLogo } from "./Icons";
 
 const Menu = () => {
   return (
-    <header className="relative flex flex-row items-center justify-between p-8 text-base font-BeVietnamPro bg-neutral-5 text-neutral-1 font-normal">
+    <header className="relative flex flex-row items-center justify-between px-8 py-8 md:px-32 text-base font-BeVietnamPro bg-neutral-5 text-neutral-1 font-normal">
       <a className="text-primary-2">
         <IconLogo></IconLogo>
       </a>
